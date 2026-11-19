@@ -56,3 +56,5 @@ python3 /usr/share/john/pdf2john.pl file3.pdf > hash3.txt
 # Combine for one run
 cat hash1.txt hash2.txt hash3.txt > all_hashes.txt
 cat all_hashes.txt
+
+Example output (hash, not password):
