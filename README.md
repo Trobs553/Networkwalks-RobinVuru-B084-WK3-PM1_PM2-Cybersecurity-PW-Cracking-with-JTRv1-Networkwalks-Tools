@@ -37,3 +37,6 @@ John the Ripper (JTR) is a fast, open-source password cracker. It takes a **hash
 **Johnny** is just the GUI (easy screen) on top of John. Same engine underneath.
 
 ### 1.2 Workflow
+
+Locked PDF -> Extract Hash -> Save hash to .txt -> Load in Johnny
+-> Select Wordlist Attack -> Start -> Password Found
