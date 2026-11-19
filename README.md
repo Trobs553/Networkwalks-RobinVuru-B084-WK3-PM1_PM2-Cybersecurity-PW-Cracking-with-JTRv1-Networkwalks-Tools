@@ -40,3 +40,19 @@ John the Ripper (JTR) is a fast, open-source password cracker. It takes a **hash
 
 Locked PDF -> Extract Hash -> Save hash to .txt -> Load in Johnny
 -> Select Wordlist Attack -> Start -> Password Found
+
+### 1.3 Step-by-Step
+
+**Step 1 — Extract the hash from the locked PDF**
+
+A PDF password is not stored in plain text. John needs the hash. I used `pdf2john`:
+
+```bash
+# Kali / Linux - pdf2john is included with John
+python3 /usr/share/john/pdf2john.pl file1.pdf > hash1.txt
+python3 /usr/share/john/pdf2john.pl file2.pdf > hash2.txt
+python3 /usr/share/john/pdf2john.pl file3.pdf > hash3.txt
+
+# Combine for one run
+cat hash1.txt hash2.txt hash3.txt > all_hashes.txt
+cat all_hashes.txt
