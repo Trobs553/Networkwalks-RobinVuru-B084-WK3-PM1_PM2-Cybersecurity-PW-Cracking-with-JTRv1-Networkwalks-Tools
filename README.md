@@ -57,4 +57,6 @@ python3 /usr/share/john/pdf2john.pl file3.pdf > hash3.txt
 cat hash1.txt hash2.txt hash3.txt > all_hashes.txt
 cat all_hashes.txt
 
+
 Example output (hash, not password):
+file1.pdf:$pdf$4*4*128*-1028*1*16*...
